@@ -204,7 +204,7 @@
 
         function typeWriter(element, text, index) {
             if (index < text.length) {
-                element.innerHTML = text.substring(0, index + 1) + "_";
+                element.innerHTML = text.substring(0, index + 1) + "⚫";
                 setTimeout(() => typeWriter(element, text, index + 1), 25);
             } else {
                 element.innerHTML = text; // Remove underscore when typing is complete
