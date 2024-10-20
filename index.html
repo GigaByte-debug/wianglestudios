@@ -205,7 +205,7 @@
         function typeWriter(element, text, index) {
             if (index < text.length) {
                 element.innerHTML = text.substring(0, index + 1) + "⚫";
-                setTimeout(() => typeWriter(element, text, index + 1), 25);
+                setTimeout(() => typeWriter(element, text, index + 1), currentLang === "zh" ? 30 : 15);
             } else {
                 element.innerHTML = text; // Remove underscore when typing is complete
             }
